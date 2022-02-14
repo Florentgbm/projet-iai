@@ -13,7 +13,7 @@ projet_iai=Flask(__name__)
 motdepasse=quote_plus(os.getenv('password'))
 hostname=os.getenv('host')
 
-projet_iai.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:{}@{}:5432/projet_python'.format(motdepasse,hostname)
+projet_iai.config['SQLALCHEMY_DATABASE_URI']='postgres://fdabotokurwmjr:5240f118c58464662c94a9590dc8e5414084ffe3d8bae2f191ee811b6db87214@ec2-54-158-26-89.compute-1.amazonaws.com:5432/dfvq3u9a7iqrqm'
 projet_iai.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db=SQLAlchemy(projet_iai)
 migrate=Migrate(projet_iai,db)
